@@ -6,7 +6,7 @@ MinhaBiblioteca
 ## Calculator project to use the library
 CalculadoraExterna
   
-## How to generate library version
+## How to generate library apk
 ```java
 ./gradlew uploadArchives
 ```
