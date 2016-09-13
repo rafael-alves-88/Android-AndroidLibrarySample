@@ -1,4 +1,4 @@
-# Android-CalculatorLibSample
+# Android-AndroidLibrarySample
 This sample shows how to generate an Android Library and use in an Android Project by creating a reference from Gradle.
 "MinhaBiblioteca" is an Android Library with the 4 basic calculator functions. It's deployed to a local file so it can be referenced by other applications.
 "CalculadoraExterna" creates a reference for this library and uses it's methods.
