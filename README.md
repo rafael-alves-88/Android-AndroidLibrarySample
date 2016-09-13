@@ -11,6 +11,7 @@ CalculadoraExterna
   
 ## How to generate library apk
 ```java
+./gradlew install
 ./gradlew uploadArchives
 ```
   
@@ -32,7 +33,6 @@ apply plugin: 'maven'
 uploadArchives {
     repositories {
         mavenDeployer {
-            //repository(url: "file:///D:/gradle/rep")
             repository(url: "file:///gradle/rep")
 
             pom.groupId = GROUP
@@ -43,9 +43,6 @@ uploadArchives {
 }
 
 task install (dependsOn: uploadArchives)
-
-//./gradlew install
-//./gradlew uploadArchives
 ```
 
 ### Calculator Project
@@ -53,7 +50,6 @@ task install (dependsOn: uploadArchives)
 ```java
 repositories {
     maven {
-        //url "file:///D:/gradle/rep"
         url "file:///gradle/rep"
     }
 }
